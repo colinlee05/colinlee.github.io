@@ -15,6 +15,9 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#blog">Updates</a></li>
+                <li><a href="#resources">Resources</a></li>
                 <li><a href="#social">Social</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -27,7 +30,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="content">
-                <img src="lsu-logo.png" alt="LSU Logo" class="profile-img">
+                <img src="colin-photo.png" alt="Colin Lee" class="profile-img">
                 <p>
                     I'm Colin Lee, a student at Louisiana State University (LSU) majoring in Information Systems and Decision Sciences (ISDS) with a concentration in Cyber Risk. I’m also pursuing a minor in Computer Science. I’m passionate about technology, cybersecurity, and using data to solve real-world problems. Geaux Tigers!
                 </p>
@@ -42,13 +45,9 @@
             <div class="content">
                 <ul>
                     <li>
-                        <strong>Cyber Risk Dashboard</strong>: Built a VBA macro in Excel to visualize cybersecurity threats for a mock LSU network. Used sample data from simulated risk assessments.
-                    </li>
-                    <li>
-                        <strong>Password Strength Analyzer</strong>: Developed a Java program to evaluate password security, focusing on length and character variety. Presented it in a CS class.
-                    </li>
-                    <li>
-                        <strong>LSU Event Scheduler</strong>: Created an Excel VBA tool to help student orgs plan events around LSU game days, with automated date checks.
+                        <strong>Password Strength Analyzer</strong>: Developed a Java program to evaluate password security, focusing on length and character variety. Presented it in a CS class.<br>
+                        <button id="demo-btn">Show Sample Output</button>
+                        <p id="demo-output" class="hidden">Password "abc123": Weak (6 chars, no special symbols)</p>
                     </li>
                 </ul>
             </div>
@@ -60,8 +59,59 @@
             <div class="content">
                 <ul class="skills-list">
                     <li>Programming: VBA, Java</li>
-                    <li>Cybersecurity: Risk Assessment, Penetration Testing Basics, Network Security</li>
+                    <li>Cybersecurity: Risk Assessment, Network Security</li>
                     <li>Tools: Microsoft Office Suite Apps</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="content">
+                <ul>
+                    <li>
+                        <strong>LSU IT Help Desk (Volunteer)</strong> - Fall 2024<br>
+                        Assisted students with basic network troubleshooting and software installs, using Office Suite tools to log issues.
+                    </li>
+                    <li>
+                        <strong>ISDS Cyber Risk Internship (Mock)</strong> - Summer 2024<br>
+                        Supported a simulated team project to audit LSU’s Wi-Fi security, wrote VBA scripts to analyze log data.
+                    </li>
+                    <li>
+                        <strong>CS Teaching Assistant</strong> - Spring 2025<br>
+                        Helped grade Java assignments and tutored peers on basic programming concepts.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blog/Updates Section -->
+        <section id="blog">
+            <h2>Updates</h2>
+            <div class="content">
+                <ul>
+                    <li>
+                        <strong>March 2025</strong>: Started learning Java’s security libraries to build a basic encryption tool—stay tuned for the project!
+                    </li>
+                    <li>
+                        <strong>February 2025</strong>: Used VBA to automate my LSU club’s budget tracking in Excel—saved us hours!
+                    </li>
+                    <li>
+                        <strong>January 2025</strong>: Attended an LSU cybersecurity workshop and learned about phishing defense tactics.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Resources</h2>
+            <div class="content">
+                <ul>
+                    <li><a href="https://www.cybrary.it/" target="_blank">Cybrary</a> - Free cybersecurity courses I’ve explored for Cyber Risk studies.</li>
+                    <li><a href="https://docs.microsoft.com/en-us/office/vba/api/overview/" target="_blank">VBA Docs</a> - My go-to for Excel automation tricks.</li>
+                    <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java</a> - Helped me master Java basics for CS.</li>
                 </ul>
             </div>
         </section>
@@ -90,6 +140,13 @@
                 <p>Interested in collaborating or just want to say hi? Reach out!</p>
                 <p>Email: <a href="mailto:colinfrancislee@gmail.com">colinfrancislee@gmail.com</a></p>
             </div>
+        </section>
+
+        <!-- Call-to-Action Banner -->
+        <section id="cta">
+            <h2>Get In Touch</h2>
+            <p>Have a cybersecurity challenge or need an Excel automation pro? Let’s chat!</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
         </section>
     </main>
 

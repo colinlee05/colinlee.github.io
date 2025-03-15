@@ -1,9 +1,9 @@
-/* Add smooth scrolling */
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* Rest unchanged */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -117,7 +117,7 @@ button:hover {
     display: none;
 }
 
-#fun-fact {
+#fun-fact, #demo-output {
     margin-top: 10px;
     font-style: italic;
     color: #666;
@@ -137,6 +137,28 @@ button:hover {
 .skills-list li::before {
     content: "✓ ";
     color: #fdb927;
+}
+
+/* CTA Section */
+#cta {
+    text-align: center;
+    background-color: #fdb927;
+    color: #461d7c;
+    padding: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #461d7c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #2e1252;
 }
 
 /* Footer */
