@@ -117,10 +117,18 @@ button:hover {
     display: none;
 }
 
-#fun-fact, #demo-output {
+#fun-fact, #password-result {
     margin-top: 10px;
     font-style: italic;
     color: #666;
+}
+
+#password-input {
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
 }
 
 /* Projects and Skills Specific Styles */

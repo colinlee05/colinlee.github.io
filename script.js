@@ -10,14 +10,23 @@ document.getElementById('fun-fact-btn').addEventListener('click', function() {
     }
 });
 
-// Password demo button
-document.getElementById('demo-btn').addEventListener('click', function() {
-    var demoOutput = document.getElementById('demo-output');
-    if (demoOutput.classList.contains('hidden')) {
-        demoOutput.classList.remove('hidden');
-        this.textContent = 'Hide Sample Output';
+// Password strength checker
+document.getElementById('check-btn').addEventListener('click', function() {
+    var password = document.getElementById('password-input').value;
+    var result = document.getElementById('password-result');
+    var strength = '';
+
+    if (password.length === 0) {
+        strength = 'Please enter a password.';
+    } else if (password.length < 6) {
+        strength = 'Weak: Too short (less than 6 characters).';
+    } else if (password.length < 10 && !/[!@#$%^&*]/.test(password)) {
+        strength = 'Medium: At least 6 characters, but no special symbols.';
+    } else if (password.length >= 10 && /[!@#$%^&*]/.test(password)) {
+        strength = 'Strong: 10+ characters with special symbols!';
     } else {
-        demoOutput.classList.add('hidden');
-        this.textContent = 'Show Sample Output';
+        strength = 'Good: Decent length, consider adding special characters.';
     }
+
+    result.textContent = strength;
 });
