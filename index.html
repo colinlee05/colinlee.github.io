@@ -2,62 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Colin Lee's Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #461d7c; /* LSU purple */
-        }
-        h2 {
-            color: #fdb927; /* LSU gold */
-        }
-        .section {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: white;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        a {
-            color: #461d7c;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin Lee</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
+    <!-- Header -->
+    <header>
+        <h1>Colin Lee</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- About Me Section -->
-    <div class="section">
-        <h2>About Me</h2>
-        <img src="lsu-logo.png" alt="LSU Logo" width="150">
-        <p>
-            I'm a student at Louisiana State University (LSU) majoring in Information Systems and Decision Sciences (ISDS) with a concentration in Cyber Risk. I’m also pursuing a minor in Computer Science. I’m passionate about technology, cybersecurity, and using data to solve real-world problems. Geaux Tigers!
-        </p>
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="content">
+                <img src="lsu-logo.png" alt="LSU Logo" class="profile-img">
+                <p>
+                    I'm Colin Lee, a student at Louisiana State University (LSU) majoring in Information Systems and Decision Sciences (ISDS) with a concentration in Cyber Risk. I’m also pursuing a minor in Computer Science. I’m passionate about technology, cybersecurity, and using data to solve real-world problems. Geaux Tigers!
+                </p>
+            </div>
+            <button id="fun-fact-btn">Show Fun Fact</button>
+            <p id="fun-fact" class="hidden">I once stayed up all night debugging code during an LSU game week!</p>
+        </section>
 
-    <!-- Social Section -->
-    <div class="section">
-        <h2>Social</h2>
-        <p>Connect with me on social media:</p>
-        <p>
-            <img src="x-icon.png" alt="X Icon" width="30">
-            <a href="https://twitter.com/colinlee05" target="_blank">X: @colinlee05</a>
-        </p>
-        <p>
-            <img src="instagram-icon.png" alt="Instagram Icon" width="30">
-            <a href="https://www.instagram.com/colinlee.05" target="_blank">Instagram: @colinlee.05</a>
-        </p>
-    </div>
+        <!-- Social Section -->
+        <section id="social">
+            <h2>Social</h2>
+            <div class="content">
+                <ul class="social-links">
+                    <li>
+                        <img src="x-icon.png" alt="X Icon" class="social-icon">
+                        <a href="https://twitter.com/colinlee05" target="_blank">X: @colinlee05</a>
+                    </li>
+                    <li>
+                        <img src="instagram-icon.png" alt="Instagram Icon" class="social-icon">
+                        <a href="https://www.instagram.com/colinlee.05" target="_blank">Instagram: @colinlee.05</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Colin Lee</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
