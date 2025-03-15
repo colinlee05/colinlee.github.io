@@ -1,4 +1,9 @@
-/* Reset default styles */
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Rest unchanged */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background-color: #461d7c; /* LSU purple */
+    background-color: #461d7c;
     color: white;
     padding: 20px;
     text-align: center;
@@ -34,7 +39,7 @@ nav ul {
 }
 
 nav a {
-    color: #fdb927; /* LSU gold */
+    color: #fdb927;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
