@@ -52,7 +52,8 @@ nav a:hover {
 
 /* Main Content */
 main {
-    max-width: 1000px;
+    width: 90%; /* Changed from max-width: 1000px to fill more screen */
+    max-width: 1200px; /* Still caps it for very wide screens */
     margin: 20px auto;
     padding: 0 20px;
 }
@@ -74,6 +75,24 @@ h2 {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contact-list li {
+    margin-bottom: 8px;
+}
+
+.contact-list strong {
+    color: #461d7c;
 }
 
 .profile-img {
@@ -153,6 +172,7 @@ button:hover {
     background-color: #fdb927;
     color: #461d7c;
     padding: 30px;
+    margin-bottom: 60px; /* Space for footer */
 }
 
 .cta-button {
@@ -175,7 +195,6 @@ footer {
     padding: 10px;
     background-color: #461d7c;
     color: white;
-    position: fixed;
-    bottom: 0;
+    /* Removed position: fixed to avoid overlap */
     width: 100%;
 }
